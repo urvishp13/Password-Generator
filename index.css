@@ -12,9 +12,18 @@ body {
     width: 550px;
     height: 550px;
     background: #1F2937;
-    color: #D5D4D8;
+    color: #FFFFFF;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: -1px;
+    width: 354px;
 }
 
 .highlight {
-    color: 
+    color: #4ADF86;
 }
