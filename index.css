@@ -1,3 +1,20 @@
 body {
     margin: 0;
+    background: #1C1C1C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    height: 100svh;
+}
+
+.container {
+    width: 550px;
+    height: 550px;
+    background: #1F2937;
+    color: #D5D4D8;
+}
+
+.highlight {
+    color: 
 }
