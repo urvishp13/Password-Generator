@@ -27,3 +27,22 @@ h1 {
 .highlight {
     color: #4ADF86;
 }
+
+.subtitle {
+    color: #D5D4D8;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+#generate-btn {
+    padding: 9px 17px 9px 15px;
+    border-radius: 6px;
+    background: #10B981;
+    border: none;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
