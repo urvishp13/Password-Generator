@@ -59,6 +59,10 @@ h1 {
     cursor: pointer;
 }
 
+input[type="range"] {
+    width: 100px;
+}
+
 hr {
     width: 446px;
     height: 1px;
