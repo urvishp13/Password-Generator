@@ -5,27 +5,26 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    height: 100svh;
 }
 
 main {
-    width: 550px;
-    height: 550px;
+    width: 90%;
+    max-width: 550px;
     background: #1F2937;
     color: #FFFFFF;
-    padding: 115px 52px;
+    padding: 7.1875em 3.25em;
     box-sizing: border-box;
 }
 
 header {
-    margin-bottom: 51px;
+    margin-bottom: 3.1875em;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 1.875rem; /* 30 px */
     font-family: 'Karla', sans-serif;
     font-weight: 800;
-    line-height: 40px;
+    line-height: 1;
     letter-spacing: -1px;
     width: 354px;
     margin: 0;
@@ -34,11 +33,12 @@ h1 {
 
 .highlight {
     color: #4ADF86;
+    display: block;
 }
 
 .subtitle {
     color: #D5D4D8;
-    font-size: 20px;
+    font-size: 1rem;
     font-family: 'Inter', sans-serif;
     margin-top: 10px;
 }
@@ -64,7 +64,7 @@ input[type="range"] {
 }
 
 hr {
-    width: 446px;
+    width: 100%;
     height: 1px;
     background: #2F3E53;
     border: none;
