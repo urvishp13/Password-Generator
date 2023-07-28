@@ -79,12 +79,14 @@ h1 {
     margin-top: .1em;
 }
 
-/* --------- INCLUDING NUMBERS IN PASSWORD RELATED --------- */
+/* --------- NUMBERS & SPECIAL CHARS RELATED --------- */
 
-.include-numbers-container {
+.include-numbers-container,
+.include-special-chars-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: .5em;
 }
 
 input[type="checkbox"] {
