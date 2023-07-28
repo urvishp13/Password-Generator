@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     background: #1C1C1C;
@@ -13,15 +17,14 @@ main {
     max-width: 550px;
     background: #1F2937;
     color: #FFFFFF;
-    padding: 7.1875em 3.25em;
-    box-sizing: border-box;
+    padding: 3em 3.25em;
 }
 
 header {
     margin-bottom: 3.1875em;
 }
 
-h1 {
+.title {
     font-size: 1.875rem; /* 30 px */
     font-family: 'Karla', sans-serif;
     font-weight: 800;
@@ -86,29 +89,29 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: .5em;
+    margin-bottom: 1.5em;
 }
 
 input[type="checkbox"] {
-    margin-right: 2.1em;
+    margin-right: 1.75em;
     width: 1.5em;
     height: 1.5em;
 }
 
-#generate-passwords-btn {
-    display: inline-flex;
-    padding: 9px 17px 9px 15px;
+/* ------------- GENERATE PASSWORDS BUTTON --------- */
+.generate-passwords-btn {
+    width: 100%;
+    padding: .5625em 1em;
     border-radius: 6px;
     background: #10B981;
     border: none;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
     color: #FFFFFF;
     font-family: 'Inter', sans-serif;
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
     font-weight: 500;
-    line-height: 24px;
-    margin-top: 10px;
-    margin-bottom: 35px;
+    line-height: 1.5;
+    margin: .625em 0 2.1875em;
     cursor: pointer;
 }
 
@@ -117,30 +120,63 @@ hr {
     height: 1px;
     background: #2F3E53;
     border: none;
-    margin: 0px;
-    margin-bottom: 35px;
+    margin: 0 0 2.1875em;
 }
 
-.passwords-container {
-    display: flex;
-    column-gap: 24px;
-}
-
+/* --------- PASSWORD OUTPUT AREAS ----------- */
 .password {
     background: #273549;
     border-radius: 6px;
-    margin: 0;
-    padding: 4px 16px 3px 15px;
-    width: 180px;
-    height: 32px;
+    padding: .25em 1em;
+    width: 100%;
+    height: 2em;
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    line-height: 32px;
+    line-height: 1.5;
     color: #55F991;
+}
+
+.password-1 {
+    margin-bottom: 1em;
 }
 
 .border-white {
     border: 2px solid whitesmoke;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+@media (min-width: 551px) {
+    
+    .pswd-length-ui {
+        margin-right: 6em;
+    }
+
+    input[type="checkbox"] {
+        margin-right: 7.75em;
+    }
+
+    .generate-passwords-btn {
+        display: inline;
+        width: initial; 
+    }
+
+    .passwords-container {
+        display: flex;
+        gap: 2em;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+    }
+
+    .pswd-length p, label {
+        font-size: 1.1rem;
+    }
+
 }
