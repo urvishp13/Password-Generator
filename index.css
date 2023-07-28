@@ -5,6 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: 'Inter', sans-serif;
 }
 
 main {
@@ -26,9 +27,8 @@ h1 {
     font-weight: 800;
     line-height: 1;
     letter-spacing: -1px;
-    width: 354px;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: .333em;
 }
 
 .highlight {
@@ -38,9 +38,58 @@ h1 {
 
 .subtitle {
     color: #D5D4D8;
-    font-size: 1rem;
-    font-family: 'Inter', sans-serif;
-    margin-top: 10px;
+    font-size: 1rem; /* 16px */
+    margin-top: .625em;
+}
+
+/* ----------- PASSWORD LENGTH ---------- */
+.pswd-length-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+    color: #1C1C1C;
+    margin: 0 auto;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2.5rem;
+    border: 5px solid grey;
+}
+
+.arrowhead {
+    font-size: 3rem; /* 48px */
+    color: grey;
+}
+
+.arrowhead.up {
+    margin-bottom: .2em;
+}
+
+.arrowhead.down {
+    margin-top: .1em;
+}
+
+.pswd-length {
+    text-align: center;
+}
+
+.pswd-length-container {
+    margin: -3em;
+}
+
+/* ------- Removing stepup and stepdown arrows that come with number input -------- */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 #generate-passwords-btn {
@@ -55,12 +104,9 @@ h1 {
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
+    margin-top: 10px;
     margin-bottom: 35px;
     cursor: pointer;
-}
-
-input[type="range"] {
-    width: 100px;
 }
 
 hr {
