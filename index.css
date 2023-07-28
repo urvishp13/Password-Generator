@@ -43,13 +43,21 @@ h1 {
 }
 
 /* ----------- PASSWORD LENGTH ---------- */
+.pswd-length-container {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -3em;
+    
+}
+
 .pswd-length-number {
     display: flex;
     justify-content: center;
     align-items: center;
     background: #FFF;
     color: #1C1C1C;
-    margin: 0 auto;
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
@@ -69,27 +77,6 @@ h1 {
 
 .arrowhead.down {
     margin-top: .1em;
-}
-
-.pswd-length {
-    text-align: center;
-}
-
-.pswd-length-container {
-    margin: -3em;
-}
-
-/* ------- Removing stepup and stepdown arrows that come with number input -------- */
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
 }
 
 #generate-passwords-btn {
@@ -136,4 +123,8 @@ hr {
     font-weight: 500;
     line-height: 32px;
     color: #55F991;
+}
+
+.border-white {
+    border: 2px solid whitesmoke;
 }
