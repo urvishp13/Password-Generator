@@ -27,16 +27,7 @@ function generatePassword() {
 
     const password = []
 
-    let characters = alphabet.split("")
-    // console.log(characters)
-    if (includeNums.checked) {
-        characters = characters.concat(numbers.split(""))
-    }
-    if (includeSpecialChars.checked) {
-        characters = characters.concat(specialChars.split(""))
-    }
-
-    console.log(characters)
+    let characters = getUsableCharacters()
 
     for (let count = 0; count < pswdLength.textContent; count++) {
         const randomIndex = Math.floor( Math.random() * characters.length ) + 1
@@ -44,4 +35,17 @@ function generatePassword() {
     }
 
     return password.join('')
+}
+
+function getUsableCharacters() {
+    characters = alphabet.split("")
+    
+    if (includeNums.checked) {
+        characters = characters.concat(numbers.split(""))
+    }
+    if (includeSpecialChars.checked) {
+        characters = characters.concat(specialChars.split(""))
+    }
+
+    return characters
 }
