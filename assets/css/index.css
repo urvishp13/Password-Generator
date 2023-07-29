@@ -94,8 +94,8 @@ header {
 
 input[type="checkbox"] {
     margin-right: 1.75em;
-    width: 1.5em;
-    height: 1.5em;
+    min-width: 1.5em;
+    min-height: 1.5em;
 }
 
 /* ------------- GENERATE PASSWORDS BUTTON --------- */
