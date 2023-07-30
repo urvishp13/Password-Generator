@@ -45,6 +45,11 @@ header {
     margin-top: .625em;
 }
 
+footer {
+    text-align: center;
+    margin-top: 1.75em;
+}
+
 /* ----------- PASSWORD LENGTH ---------- */
 .pswd-length-container {
     text-align: center;
