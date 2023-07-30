@@ -140,12 +140,12 @@ hr {
 }
 
 .copy-icon-wrapper {
-    /* border: 1px solid #D5D4D8; */
+    border: 1px solid #D5D4D8;
     padding: .25em .5em;
     height: 100%;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
-    background: #d5d4d8c1;
+    background: rgba(128, 128, 128, 0.408);
     align-self: end;
 }
 
