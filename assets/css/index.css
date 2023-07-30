@@ -147,6 +147,11 @@ hr {
     border-bottom-right-radius: 6px;
     background: rgba(128, 128, 128, 0.408);
     align-self: end;
+    cursor: pointer;
+}
+
+.copy-icon-wrapper:hover {
+    background: rgba(128, 128, 128, 0.159);
 }
 
 .password-wrapper:not(:last-child) {
