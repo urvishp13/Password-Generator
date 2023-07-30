@@ -124,22 +124,37 @@ hr {
 }
 
 /* --------- PASSWORD OUTPUT AREAS ----------- */
-.password {
+.password-wrapper {
     background: #273549;
     border-radius: 6px;
-    padding: .25em 1em;
     width: 100%;
     height: 2em;
     text-align: center;
     font-size: 1rem; /* 16px */
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    line-height: 1.5;
     color: #55F991;
+    display: flex;
+    align-items: center;
 }
 
-.password-1 {
+.copy-icon-wrapper {
+    /* border: 1px solid #D5D4D8; */
+    padding: .25em .5em;
+    height: 100%;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background: #d5d4d8c1;
+    align-self: end;
+}
+
+.password-wrapper:not(:last-child) {
     margin-bottom: 1em;
+}
+
+.password {
+    padding: .25em 1em;
+    width: 100%;
 }
 
 .border-white {
