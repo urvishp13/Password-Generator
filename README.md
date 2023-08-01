@@ -12,15 +12,16 @@ This project is from the Scrimba Frontend Development bootcamp with many
 enhancements:
 
 Requirements
-✅ Build it from "scratch" (using a Figma file)
-✅ Generate 2 random passwords when the user clicks the button
+✅ Build it from "scratch" (using a Figma file)<br>
+✅ Generate 2 random passwords when the user clicks the button<br>
 ✅ Each password should be 15 characters long
 
 Stretch Goals
-✅ Ability to set password length
-✅ Add "copy-on-click" feature
+✅ Ability to set password length<br>
+✅ Add "copy-on-click" feature<br>
 ✅ Toggle "symbols" and "numbers" on/off
 
 My Additions
-✅ Make responsive
+✅ Make responsive<br>
+✅ Implement personal UI design for above stretch goals<br>
 ✅ Make usable on mobile devices
