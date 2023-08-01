@@ -1,21 +1,26 @@
-# cR9B46Sg
+# Password Generator
 
-Quick start:
+Have you ever been in need of a password that requires all the criteria 
+of a website? In this day and age, who hasn't? Well, here you are: a
+password generator application that generates premium passwords by utilizing a randomizing algorithm. Once generated, you have the ability to copy the password and paste it wherever you want. Long gone are the days where you have to take a couple minutes to think of a good password as this password generator app does the work for you. And the best part is you can use this on your phone! So, utilize this wherever you want and enjoy.
 
-```
-$ npm install
-$ npm start
-````
+Live site: [https://premium-password.netlify.app/](https://premium-password.netlify.app/)
 
-Head over to https://vitejs.dev/ to learn more about using vite
-## About Scrimba
+<hr>
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+This project is from the Scrimba Frontend Development bootcamp with many
+enhancements:
 
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+Requirements
+✅ Build it from "scratch" (using a Figma file)
+✅ Generate 2 random passwords when the user clicks the button
+✅ Each password should be 15 characters long
 
-Happy Coding!
+Stretch Goals
+✅ Ability to set password length
+✅ Add "copy-on-click" feature
+✅ Toggle "symbols" and "numbers" on/off
+
+My Additions
+✅ Make responsive
+✅ Make usable on mobile devices
