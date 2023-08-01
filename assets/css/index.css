@@ -102,6 +102,7 @@ input[type="checkbox"] {
     margin-right: 1.75em;
     min-width: 1.5em;
     min-height: 1.5em;
+    cursor: pointer;
 }
 
 /* ------------- GENERATE PASSWORDS BUTTON --------- */
