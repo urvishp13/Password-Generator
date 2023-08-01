@@ -11,17 +11,17 @@ Live site: [https://premium-password.netlify.app/](https://premium-password.netl
 This project is from the Scrimba Frontend Development bootcamp with many
 enhancements:
 
-Requirements
+Requirements<br>
 ✅ Build it from "scratch" (using a Figma file)<br>
 ✅ Generate 2 random passwords when the user clicks the button<br>
 ✅ Each password should be 15 characters long
 
-Stretch Goals
+Stretch Goals<br>
 ✅ Ability to set password length<br>
 ✅ Add "copy-on-click" feature<br>
 ✅ Toggle "symbols" and "numbers" on/off
 
-My Additions
+My Additions<br>
 ✅ Make responsive<br>
 ✅ Implement personal UI design for above stretch goals<br>
 ✅ Make usable on mobile devices
