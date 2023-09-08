@@ -1,7 +1,5 @@
 const copyIcons = document.getElementsByClassName("copy-icon-wrapper")
 
-console.log(copyIcons)
-
 // when the first copy icon is clicked
 copyIcons[0].addEventListener("click", function() {
     /* copy the associated password to the clipboard*/
