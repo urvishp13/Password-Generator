@@ -8,7 +8,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     font-family: 'Inter', sans-serif;
 }
 
@@ -52,12 +51,11 @@ footer {
 
 /* ----------- PASSWORD LENGTH ---------- */
 .pswd-length-container {
-    text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -3em;
-    
+    margin: -1em 0 1em;
+    column-gap: 1em;
 }
 
 .pswd-length-number {
@@ -72,12 +70,13 @@ footer {
     text-align: center;
     font-size: 2.5rem;
     border: 5px solid grey;
-    cursor: ns-resize;
 }
 
 .arrowhead {
-    font-size: 3rem; /* 48px */
-    color: grey;
+    width: 2.75rem;
+    color: #808080;
+    margin: 0 auto;
+    cursor: pointer; 
 }
 
 .arrowhead.up {
@@ -85,7 +84,7 @@ footer {
 }
 
 .arrowhead.down {
-    margin-top: .1em;
+    margin-top: .2em;
 }
 
 /* --------- NUMBERS & SPECIAL CHARS RELATED --------- */
@@ -96,6 +95,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.5em;
+    column-gap: 1em;
 }
 
 input[type="checkbox"] {
@@ -175,9 +175,9 @@ hr {
 
 /* ---------- MEDIA QUERIES ---------- */
 @media (min-width: 551px) {
-    
-    .pswd-length-ui {
-        margin-right: 6em;
+
+    .pswd-length-number {
+        margin-right: 2.425em;
     }
 
     input[type="checkbox"] {
