@@ -8,11 +8,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@500;800&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/ms-dropdown@4.0.3/dist/css/dd.min.css" />
     <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
 <body>
     <main>
+        <div class="theme-select" style="text-align: end;">
+            <select name="theme-setting" class="theme-setting" is="ms-dropdown">
+                <option value="light" data-image="./assets/icons/icons8-sun-50.png"></option>
+                <option value="dark" data-image="./assets/icons/icons8-crescent-moon-50.png"></option>
+                <option value="os" data-image="./assets/icons/icons8-operating-system-50.png"></option>
+            </select>
+        </div>
+        
         <header>
             <h1 class="title">Generate a <span class="highlight">random password</span></h1>
             <p class="subtitle">Never use an insecure password again.</p>
@@ -92,6 +101,7 @@
     <script src="assets/javascript/settingPasswordLength.js"></script>
     <script src="assets/javascript/generatePassword.js"></script>
     <script src="assets/javascript/copyPassword.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ms-dropdown@4.0.3/dist/js/dd.min.js"></script>
 </body>
 
 </html>

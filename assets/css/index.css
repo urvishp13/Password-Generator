@@ -12,6 +12,7 @@ body {
 }
 
 main {
+    position: relative;
     width: 90%;
     max-width: 550px;
     background: #1F2937;
@@ -195,6 +196,16 @@ hr {
     visibility: visible;
 }
 
+/* ---------- THEME SELECT ----------- */
+.ms-dd {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: unset;
+    transform: scale(.55);
+    
+}
+
 /* ---------- MEDIA QUERIES ---------- */
 @media (min-width: 551px) {
 
@@ -226,6 +237,12 @@ hr {
 
     .pswd-length p, label {
         font-size: 1.1rem;
+    }
+
+    .ms-dd {
+        transform: scale(.625);
+        top: 2.5%;
+        right: 2.5%;
     }
 
 }
