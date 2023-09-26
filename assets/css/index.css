@@ -1,10 +1,23 @@
+:root {
+    --body-background: #1C1C1C;
+    --main-background: #1F2937;
+    --dark-white: #D5D4D8;
+    --white: #FFFFFF;
+    --dark-green: #10B981;
+    --green: #4ADF86;
+    --light-green: #55F991;
+    --grey: #808080;
+    --dark-blue: #2F3E53;
+    --darker-blue: #273549;
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    background: #1C1C1C;
+    background: var(--body-background);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,8 +28,8 @@ main {
     position: relative;
     width: 90%;
     max-width: 550px;
-    background: #1F2937;
-    color: #FFFFFF;
+    background: var(--main-background);
+    color: var(--white);
     padding: 3em 3.25em;
 }
 
@@ -35,12 +48,12 @@ header {
 }
 
 .highlight {
-    color: #4ADF86;
+    color: var(--green);
     display: block;
 }
 
 .subtitle {
-    color: #D5D4D8;
+    color: var(--dark-white);
     font-size: 1.0625rem; /* 17px */
     margin-top: .625em;
 }
@@ -63,19 +76,19 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #FFF;
-    color: #1C1C1C;
+    background: var(--white);
+    color: var(--body-background);
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
     text-align: center;
     font-size: 2.5rem;
-    border: 5px solid grey;
+    border: 5px solid var(--grey);
 }
 
 .arrowhead {
     width: 2.75rem;
-    color: #808080;
+    color: var(--grey);
     margin: 0 auto;
     cursor: pointer; 
 }
@@ -111,10 +124,10 @@ input[type="checkbox"] {
     width: 100%;
     padding: .5625em 1em;
     border-radius: 6px;
-    background: #10B981;
+    background: var(--dark-green);
     border: none;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
-    color: #FFFFFF;
+    color: var(--white);
     font-family: 'Inter', sans-serif;
     font-size: 1rem; /* 16px */
     font-weight: 500;
@@ -126,14 +139,14 @@ input[type="checkbox"] {
 hr {
     width: 100%;
     height: 1px;
-    background: #2F3E53;
+    background: var(--dark-blue);
     border: none;
     margin: 0 0 2.1875em;
 }
 
 /* --------- PASSWORD OUTPUT AREAS ----------- */
 .password-wrapper {
-    background: #273549;
+    background: var(--darker-blue);
     border-radius: 6px;
     width: 100%;
     height: 2em;
@@ -141,25 +154,25 @@ hr {
     font-size: 1rem; /* 16px */
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    color: #55F991;
+    color: var(--light-green);
     display: flex;
     align-items: center;
 }
 
 .copy-icon-wrapper {
     position: relative;
-    border: 1px solid #D5D4D8;
+    border: 1px solid var(--dark-white);
     padding: .25em .5em;
     height: 100%;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
-    background: rgba(128, 128, 128, 0.408);
+    background: var(--dark-white);
     align-self: end;
     cursor: pointer;
 }
 
 .copy-icon-wrapper:hover {
-    background: rgba(128, 128, 128, 0.159);
+    background: #80808029;
 }
 
 .password-wrapper:not(:last-child) {
@@ -178,7 +191,7 @@ hr {
 .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: white;
+    background-color: var(--white);
     color: black;
     text-align: center;
     border-radius: 6px;
