@@ -1,10 +1,4 @@
 /* ---------- THEME SELECT ----------- */
-button {
-    appearance: none;
-    border: none;
-    cursor: pointer;
-}
-
 button.theme,
 button.theme + .theme-settings {
     width: 5.5rem;
@@ -17,11 +11,20 @@ button.theme {
     right: 5%;
     display: flex;
     align-items: center;
-    background-color: var(--dark-green);
-    border: 2.5px solid var(--white);
+    background-color: var(--clr-focal-pt);
+    border: 2.5px solid var(--clr-main-font);
+    color: var(--clr-main-bg);
     border-radius: 5px;
     font-family: inherit;
     z-index: 2;
+}
+
+.icon {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(125deg) brightness(103%) contrast(103%);
+}
+
+button.theme:hover {
+    background-color: var(--clr-main-font);
 }
 
 .theme-settings {
@@ -32,11 +35,10 @@ button.theme {
     list-style-type: none;
     padding: 0;
     text-align: left;
-    background-color: var(--dark-green);
-    border: 2.5px solid var(--white);
+    background-color: var(--clr-main-font);
+    border: 2.5px solid var(--clr-main-font);
     border-radius: 5px;
     width: max-content;
-    color: black;
     font-size: .95rem;
     z-index: 1;
 }
@@ -52,7 +54,7 @@ button.theme {
 }
 
 .setting:hover {
-    background-color: var(--dark-green);
+    background-color: var(--clr-focal-pt);
 }
 
 .icon {

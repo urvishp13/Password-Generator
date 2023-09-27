@@ -1,5 +1,5 @@
 :root {
-    --body-background: #1C1C1C;
+    /* --body-background: #1C1C1C;
     --main-background: #1F2937;
     --dark-white: #D5D4D8;
     --white: #FFFFFF;
@@ -8,7 +8,11 @@
     --light-green: #55F991;
     --grey: #808080;
     --dark-blue: #2F3E53;
-    --darker-blue: #273549;
+    --darker-blue: #273549; */
+    --clr-focal-pt: #606C38;
+    --clr-main-font: #283618;
+    --clr-secondary-bg: #FEFAE0;
+    --clr-main-bg: #FFFFFF;
 }
 
 * {
@@ -17,18 +21,19 @@
 
 body {
     margin: 0;
-    background: var(--body-background);
+    background: var(--clr-main-bg);
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Inter', sans-serif;
+    color: var(--clr-font);
 }
 
 main {
     position: relative;
     width: 90%;
     max-width: 550px;
-    background: var(--main-background);
+    background: var(--clr-secondary-bg);
     color: var(--white);
     padding: 3em 3.25em;
 }
@@ -48,12 +53,11 @@ header {
 }
 
 .highlight {
-    color: var(--green);
+    color: var(--clr-focal-pt);
     display: block;
 }
 
 .subtitle {
-    color: var(--dark-white);
     font-size: 1.0625rem; /* 17px */
     margin-top: .625em;
 }
@@ -61,6 +65,21 @@ header {
 footer {
     text-align: center;
     margin-top: 1.75em;
+}
+
+button {
+    appearance: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* --------- COLOR PALETTE -------------- */
+.dark {
+    --clr-black-light: #2B2C28;
+    --clr-black-drk: #131515;
+    --clr-teal: #7DE2D1;
+    --clr-teal-drk: #339989;
+    --clr-white: #FFFAFB;
 }
 
 /* ----------- PASSWORD LENGTH ---------- */
@@ -76,21 +95,22 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--white);
-    color: var(--body-background);
+    background: var(--clr-focal-pt);
+    color: var(--clr-main-bg);
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
     text-align: center;
     font-size: 2.5rem;
-    border: 5px solid var(--grey);
+    border: 5px solid var(--clr-main-font);
 }
 
 .arrowhead {
+    display: block;
     width: 2.75rem;
-    color: var(--grey);
     margin: 0 auto;
-    cursor: pointer; 
+    filter: invert(41%) sepia(11%) saturate(1521%) hue-rotate(33deg) brightness(91%) contrast(89%);
+    cursor: pointer;
 }
 
 .arrowhead.up {
@@ -117,6 +137,7 @@ input[type="checkbox"] {
     min-width: 1.5em;
     min-height: 1.5em;
     cursor: pointer;
+    accent-color: var(--clr-focal-pt);
 }
 
 /* ------------- GENERATE PASSWORDS BUTTON --------- */
@@ -124,10 +145,10 @@ input[type="checkbox"] {
     width: 100%;
     padding: .5625em 1em;
     border-radius: 6px;
-    background: var(--dark-green);
+    background: var(--clr-focal-pt);
     border: none;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
-    color: var(--white);
+    color: var(--clr-main-bg);
     font-family: 'Inter', sans-serif;
     font-size: 1rem; /* 16px */
     font-weight: 500;
@@ -139,14 +160,14 @@ input[type="checkbox"] {
 hr {
     width: 100%;
     height: 1px;
-    background: var(--dark-blue);
+    background: var(--clr-main-font);
     border: none;
     margin: 0 0 2.1875em;
 }
 
 /* --------- PASSWORD OUTPUT AREAS ----------- */
 .password-wrapper {
-    background: var(--darker-blue);
+    background: var(--clr-focal-pt);
     border-radius: 6px;
     width: 100%;
     height: 2em;
@@ -154,19 +175,19 @@ hr {
     font-size: 1rem; /* 16px */
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    color: var(--light-green);
+    color: var(--clr-main-bg);
     display: flex;
     align-items: center;
 }
 
 .copy-icon-wrapper {
     position: relative;
-    border: 1px solid var(--dark-white);
+    border: 1px solid var(--clr-main-font);
     padding: .25em .5em;
     height: 100%;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
-    background: var(--dark-white);
+    background: var(--clr-main-bg);
     align-self: end;
     cursor: pointer;
 }
@@ -184,16 +205,13 @@ hr {
     width: 100%;
 }
 
-.border-white {
-    border: 2px solid whitesmoke;
-}
-
 .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: var(--white);
+    background-color: var(--clr-white);
     color: black;
     text-align: center;
+    border: 1px solid var(--clr-font);
     border-radius: 6px;
     padding: 5px 0;
 
