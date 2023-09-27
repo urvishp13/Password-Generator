@@ -11,12 +11,12 @@
 }   
 
 /* ---------- THEME SELECT ----------- */
-button.theme,
-button.theme + .theme-settings {
+button.theme-select,
+button.theme-select + .themes {
     width: 5.5rem;
 }
 
-button.theme {
+button.theme-select {
     appearance: none;
     position: absolute;
     top: 2.5%;
@@ -31,15 +31,16 @@ button.theme {
     z-index: 2;
 }
 
-.icon {
-    filter: var(--clrTheme-icon-filter);
-}
-
-button.theme:hover {
+button.theme-select:hover {
     background-color: var(--clr-main-font);
 }
 
-.theme-settings {
+.color-theme-icon,
+.theme-icon {
+    filter: var(--clrTheme-icon-filter);
+}
+
+.themes {
     display: none;
     position: absolute;
     top: 3.6%;
@@ -55,21 +56,21 @@ button.theme:hover {
     z-index: 1;
 }
 
-.theme-select li {
+.themes li {
     margin: .25em;
     text-align: center;  
 }
 
-.setting {
+.theme {
     width: 100%;
     background-color: var(--white);
 }
 
-.setting:hover {
+.theme:hover {
     background-color: var(--clr-focal-pt);
 }
 
-.icon {
+.theme-icon {
     vertical-align: middle;
 }
 
@@ -80,14 +81,43 @@ button.theme:hover {
 /* ---------- MEDIA QUERIES ---------- */
 @media (min-width: 551px) {
 
-    button.theme,
-    .theme-select ul {
+    button.theme-select,
+    .themes {
         transform: scale(1.25);
         right: 4%;
     }
 
-    .theme-select ul {
+    .themes {
         top: 6%;
     }
 
+}
+
+@media (prefers-color-scheme: dark) {
+    
+    .system {
+        --clr-secondary-bg: #2B2C28;
+        --clr-main-bg: #131515;
+        --clr-focal-pt: #7DE2D1;
+        /* --clr-main-font: #339989; */
+        --clr-main-font: #FFFAFB;
+        --arwhead-filter: invert(82%) sepia(46%) saturate(344%) hue-rotate(113deg) brightness(94%) contrast(90%);
+        --clrTheme-icon-filter: invert(7%) sepia(6%) saturate(605%) hue-rotate(131deg) brightness(90%) contrast(95%);
+        --copyIcon-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    } 
+
+}
+
+@media (prefers-color-scheme: light) {
+
+    .system {
+        --clr-focal-pt: #606C38;
+        --clr-main-font: #283618;
+        --clr-secondary-bg: #FEFAE0;
+        --clr-main-bg: #FFFFFF;
+        --arwhead-filter: invert(41%) sepia(11%) saturate(1521%) hue-rotate(33deg) brightness(91%) contrast(89%);
+        --clrTheme-icon-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(125deg) brightness(103%) contrast(103%);
+        --copyIcon-filter: invert(0%) sepia(9%) saturate(7464%) hue-rotate(152deg) brightness(104%) contrast(110%);
+    }
+    
 }

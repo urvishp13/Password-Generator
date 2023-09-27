@@ -12,24 +12,24 @@
     <link rel="stylesheet" href="assets/css/colorTheme.css">
 </head>
 
-<body>
+<body class="dark">
     <main>
-        <div class="theme-select" style="text-align: end;">
-            <button class="theme" id="theme"><img class="color-theme-icon icon" src="assets/icons/color-theme.svg" width="20">Theme</button>
-            <ul class="theme-settings" id="theme-settings">
+        <div class="theme-setting" style="text-align: end;">
+            <button id="theme-select" class="theme-select"><img class="color-theme-icon" src="assets/icons/color-theme.svg" width="20">Theme</button>
+            <ul id="themes" class="themes">
                 <li>
-                    <button class="setting">
-                        <img class="light-icon icon" src="assets/icons/icons8-sun-50.png" alt="sun" width="25">
+                    <button class="theme">
+                        <img id="light-icon" class="light-icon theme-icon" src="assets/icons/icons8-sun-50.png" alt="sun" width="25">
                     </button>
                 </li>
                 <li>
-                    <button class="setting">
-                        <img class="dark-icon icon" src="assets/icons/icons8-crescent-moon-50.png" alt="moon" width="25">
+                    <button class="theme">
+                        <img id="dark-icon" class="dark-icon theme-icon" src="assets/icons/icons8-crescent-moon-50.png" alt="moon" width="25">
                     </button>
                 </li>
                 <li>
-                    <button class="setting">
-                        <img class="system-icon icon" src="assets/icons/icons8-operating-system-50.png" alt="system" width="25">
+                    <button class="theme">
+                        <img id="system-icon" class="system-icon theme-icon" src="assets/icons/icons8-operating-system-50.png" alt="system" width="25">
                     </button>
                 </li>
             </ul>

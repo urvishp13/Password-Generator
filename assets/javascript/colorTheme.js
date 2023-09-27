@@ -1,12 +1,12 @@
-const themeBtn = document.getElementById("theme")
-const themeSettings = document.getElementById("theme-settings")
+const themeSelectBtn = document.getElementById("theme-select")
+const themes = document.getElementById("themes")
 
-themeBtn.addEventListener("click", function() {
-    themeSettings.classList.toggle("show")
+themeSelectBtn.addEventListener("click", function() {
+    themes.classList.toggle("show")
 })
 
-themeSettings.addEventListener("click", function(e) {
+themes.addEventListener("click", function(e) {
     if (e.target.tagName === "IMG") {
-        themeSettings.classList.remove("show")
+        themes.classList.remove("show")
     }
 })
