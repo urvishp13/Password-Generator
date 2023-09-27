@@ -209,34 +209,6 @@ hr {
     visibility: visible;
 }
 
-/* ---------- THEME SELECT ----------- */
-.ms-dd {
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    width: unset;
-    transform: scale(.55);
-    background: none;
-}
-
-.ms-value-input {
-    display: none;
-}
-
-.ms-dd .ms-dd-header {
-    border: 5px solid var(--dark-green);
-    border-radius: 10px;
-    background: var(--white);
-}
-
-.ms-dd .ms-list-option.option-selected {
-    background: none;
-}
-
-.ms-dd .ms-list-option {
-    border-bottom: none;
-}
-
 /* ---------- MEDIA QUERIES ---------- */
 @media (min-width: 551px) {
 
@@ -268,12 +240,6 @@ hr {
 
     .pswd-length p, label {
         font-size: 1.1rem;
-    }
-
-    .ms-dd {
-        transform: scale(.625);
-        top: 2.5%;
-        right: 2.5%;
     }
 
 }

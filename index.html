@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@500;800&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/ms-dropdown@4.0.3/dist/css/dd.min.css" />
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/colorTheme.css">
 </head>
@@ -16,11 +15,24 @@
 <body>
     <main>
         <div class="theme-select" style="text-align: end;">
-            <select name="theme-setting" class="theme-setting" is="ms-dropdown">
-                <option value="light" data-image="./assets/icons/icons8-sun-50.png"></option>
-                <option value="dark" data-image="./assets/icons/icons8-crescent-moon-50.png"></option>
-                <option value="os" data-image="./assets/icons/icons8-operating-system-50.png"></option>
-            </select>
+            <button class="theme" id="theme"><img src="assets/icons/color-theme.svg" width="20">Theme</button>
+            <ul class="theme-settings" id="theme-settings">
+                <li>
+                    <button class="setting">
+                        <img class="light-icon icon" src="assets/icons/icons8-sun-50.png" alt="sun" width="25">
+                    </button>
+                </li>
+                <li>
+                    <button class="setting">
+                        <img class="dark-icon icon" src="assets/icons/icons8-crescent-moon-50.png" alt="moon" width="25">
+                    </button>
+                </li>
+                <li>
+                    <button class="setting">
+                        <img class="system-icon icon" src="assets/icons/icons8-operating-system-50.png" alt="system" width="25">
+                    </button>
+                </li>
+            </ul>
         </div>
         
         <header>
@@ -103,7 +115,6 @@
     <script src="assets/javascript/generatePassword.js"></script>
     <script src="assets/javascript/copyPassword.js"></script>
     <script src="assets/javascript/colorTheme.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/ms-dropdown@4.0.3/dist/js/dd.min.js"></script>
 </body>
 
 </html>

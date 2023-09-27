@@ -1,0 +1,79 @@
+/* ---------- THEME SELECT ----------- */
+button {
+    appearance: none;
+    border: none;
+    cursor: pointer;
+}
+
+button.theme,
+button.theme + .theme-settings {
+    width: 5.5rem;
+}
+
+button.theme {
+    appearance: none;
+    position: absolute;
+    top: 2.5%;
+    right: 5%;
+    display: flex;
+    align-items: center;
+    background-color: var(--dark-green);
+    border: 2.5px solid var(--white);
+    border-radius: 5px;
+    font-family: inherit;
+    z-index: 2;
+}
+
+.theme-settings {
+    display: none;
+    position: absolute;
+    top: 3.6%;
+    right: 5%;
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    background-color: var(--dark-green);
+    border: 2.5px solid var(--white);
+    border-radius: 5px;
+    width: max-content;
+    color: black;
+    font-size: .95rem;
+    z-index: 1;
+}
+
+.theme-select li {
+    margin: .25em;
+    text-align: center;  
+}
+
+.setting {
+    width: 100%;
+    background-color: var(--white);
+}
+
+.setting:hover {
+    background-color: var(--dark-green);
+}
+
+.icon {
+    vertical-align: middle;
+}
+
+.show {
+    display: block;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+@media (min-width: 551px) {
+
+    button.theme,
+    .theme-select ul {
+        transform: scale(1.25);
+        right: 4%;
+    }
+
+    .theme-select ul {
+        top: 6%;
+    }
+
+}
