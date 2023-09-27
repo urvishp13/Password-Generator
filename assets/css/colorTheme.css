@@ -22,6 +22,7 @@ button.theme-select {
     top: 2.5%;
     right: 5%;
     display: flex;
+    justify-content: center;
     align-items: center;
     background-color: var(--clr-focal-pt);
     border: 2.5px solid var(--clr-main-font);
@@ -63,7 +64,7 @@ button.theme-select:hover {
 
 .theme {
     width: 100%;
-    background-color: var(--white);
+    background: none;
 }
 
 .theme:hover {

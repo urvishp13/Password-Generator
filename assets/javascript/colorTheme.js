@@ -2,29 +2,33 @@ const themeSelectBtn = document.getElementById("theme-select")
 const themes = document.getElementById("themes")
 const body = document.body
 
-const light = document.getElementById("light-icon")
-const dark = document.getElementById("dark-icon")
-const system = document.getElementById("system-icon")
+const lightBtn = document.getElementById("light")
+const darkBtn = document.getElementById("dark")
+const systemBtn = document.getElementById("system")
 
 const availableThemes = ["light", "dark", "system"]
 
+// display/hide the theme options when clicking the "Theme" button on the web app
 themeSelectBtn.addEventListener("click", function() {
     themes.classList.toggle("show")
 })
 
 themes.addEventListener("click", function(e) {
-    if (e.target.tagName === "IMG") {
+    // if you click on the icon or its surrounding space
+    if (e.target.tagName === "IMG" || e.target.tagName === "BUTTON") {
         themes.classList.remove("show")
     }
 })
 
-light.addEventListener("click", () => setTheme("light"))
-dark.addEventListener("click", () => setTheme("dark"))
-system.addEventListener("click", () => setTheme("system"))
+lightBtn.addEventListener("click", () => setTheme("light"))
+darkBtn.addEventListener("click", () => setTheme("dark"))
+systemBtn.addEventListener("click", () => setTheme("system"))
 
 function setTheme(theme) {
+    // clear body tag of all its classes
     for (const th of availableThemes) {
         body.classList.remove(th)
     }
+    // to add the class of the theme user wants to apply to page
     body.classList.add(theme)
 }
