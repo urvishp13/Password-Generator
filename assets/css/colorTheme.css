@@ -1,3 +1,15 @@
+/* --------- THEME COLOR PALETTE --------- */
+.dark {
+    --clr-secondary-bg: #2B2C28;
+    --clr-main-bg: #131515;
+    --clr-focal-pt: #7DE2D1;
+    /* --clr-main-font: #339989; */
+    --clr-main-font: #FFFAFB;
+    --arwhead-filter: invert(82%) sepia(46%) saturate(344%) hue-rotate(113deg) brightness(94%) contrast(90%);
+    --clrTheme-icon-filter: invert(7%) sepia(6%) saturate(605%) hue-rotate(131deg) brightness(90%) contrast(95%);
+    --copyIcon-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}   
+
 /* ---------- THEME SELECT ----------- */
 button.theme,
 button.theme + .theme-settings {
@@ -20,7 +32,7 @@ button.theme {
 }
 
 .icon {
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(125deg) brightness(103%) contrast(103%);
+    filter: var(--clrTheme-icon-filter);
 }
 
 button.theme:hover {

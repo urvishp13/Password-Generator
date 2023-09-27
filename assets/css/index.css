@@ -1,18 +1,11 @@
 :root {
-    /* --body-background: #1C1C1C;
-    --main-background: #1F2937;
-    --dark-white: #D5D4D8;
-    --white: #FFFFFF;
-    --dark-green: #10B981;
-    --green: #4ADF86;
-    --light-green: #55F991;
-    --grey: #808080;
-    --dark-blue: #2F3E53;
-    --darker-blue: #273549; */
     --clr-focal-pt: #606C38;
     --clr-main-font: #283618;
     --clr-secondary-bg: #FEFAE0;
     --clr-main-bg: #FFFFFF;
+    --arwhead-filter: invert(41%) sepia(11%) saturate(1521%) hue-rotate(33deg) brightness(91%) contrast(89%);
+    --clrTheme-icon-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(125deg) brightness(103%) contrast(103%);
+    --copyIcon-filter: invert(0%) sepia(9%) saturate(7464%) hue-rotate(152deg) brightness(104%) contrast(110%);
 }
 
 * {
@@ -26,7 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Inter', sans-serif;
-    color: var(--clr-font);
+    color: var(--clr-main-font);
 }
 
 main {
@@ -73,15 +66,6 @@ button {
     cursor: pointer;
 }
 
-/* --------- COLOR PALETTE -------------- */
-.dark {
-    --clr-black-light: #2B2C28;
-    --clr-black-drk: #131515;
-    --clr-teal: #7DE2D1;
-    --clr-teal-drk: #339989;
-    --clr-white: #FFFAFB;
-}
-
 /* ----------- PASSWORD LENGTH ---------- */
 .pswd-length-container {
     display: flex;
@@ -109,7 +93,7 @@ button {
     display: block;
     width: 2.75rem;
     margin: 0 auto;
-    filter: invert(41%) sepia(11%) saturate(1521%) hue-rotate(33deg) brightness(91%) contrast(89%);
+    filter: var(--arwhead-filter);
     cursor: pointer;
 }
 
@@ -196,6 +180,10 @@ hr {
     background: #80808029;
 }
 
+.copy-icon {
+    filter: var(--copyIcon-filter);
+}
+
 .password-wrapper:not(:last-child) {
     margin-bottom: 1em;
 }
@@ -209,7 +197,7 @@ hr {
     visibility: hidden;
     width: 120px;
     background-color: var(--clr-main-bg);
-    color: black;
+    color: var(--clr-main-font);
     text-align: center;
     border: 1px solid var(--clr-main-font);
     border-radius: 6px;
