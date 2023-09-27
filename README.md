@@ -24,4 +24,6 @@ Stretch Goals<br>
 My Additions<br>
 ✅ Make responsive<br>
 ✅ Implement personal UI design for above stretch goals<br>
-✅ Make usable on mobile devices
+✅ Make usable on mobile devices<br>
+✅ Use my own color palette<br>
+✅ Make LIGHT/DARK/SYSTEM modes
