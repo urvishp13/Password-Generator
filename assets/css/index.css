@@ -208,10 +208,10 @@ hr {
 .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: var(--clr-white);
+    background-color: var(--clr-main-bg);
     color: black;
     text-align: center;
-    border: 1px solid var(--clr-font);
+    border: 1px solid var(--clr-main-font);
     border-radius: 6px;
     padding: 5px 0;
 
