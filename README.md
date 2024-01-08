@@ -45,10 +45,10 @@ Generate two random passwords upon clicking a button.
 
 ### Screenshot
 
-![Desktop View, Light Theme version ](assets/screenshot/desktop-view-light.png)
-![Desktop View, Dark Theme version](assets/screenshot/desktop-view-dark.png)
-![Mobile View, Light Theme version ](assets/screenshot/mobile-view-light.png)
-![Mobile View, Dark Theme version](assets/screenshot/mobile-view-dark.png)
+![Desktop View, Light Theme version ](assets/screenshot/desktop-view-light-mode.png)
+![Desktop View, Dark Theme version](assets/screenshot/desktop-view-dark-mode.png)
+![Mobile View, Light Theme version ](assets/screenshot/mobile-view-light-mode.png)
+![Mobile View, Dark Theme version](assets/screenshot/mobile-view-dark-mode.png)
 
 ### Links
 
